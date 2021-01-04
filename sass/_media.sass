@@ -1,0 +1,532 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.header_description
+		font-size: 22px
+
+	.header
+		padding: 80px 0 
+
+	.block-free
+		margin: 20px 0 
+
+	.header_right img:last-child
+		width: 270px
+
+	.section
+		padding: 80px 0
+
+	.block-content
+		width: 558px
+		right: 15px
+
+	.wrapper>div
+		width: 430px
+		padding: 30px 0
+
+	.footer_nav
+		flex-wrap: wrap
+		justify-content: space-between
+		> div
+			width: 33.3%
+			margin-right: 0!important
+			margin-bottom: 20px
+
+	.slide_w
+		width: 930px
+
+	.answer
+		width: 327px
+
+
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.header .container .row
+		flex-direction: column-reverse
+		align-items: center
+
+	.block-img
+		flex: 1 0 100%
+		img
+			width: 100%
+
+	.header_right
+		display: flex
+		justify-content: center
+
+	.block-content
+		right: 50%
+		transform: translate(50%, -50%)
+		top: 90%
+
+	.section_first
+		padding: 80px 0 200px
+
+	.block-content
+		width: 90%
+
+	.section_second .container
+		align-items: flex-start
+
+	.wrapper
+		flex-direction: column
+
+	.wrapper>div
+		width: 100%
+
+	.wrapper_mob-title
+		font-weight: 700
+		font-size: 24px
+		line-height: 28px
+		margin-bottom: 20px
+
+	.wrapper_mob
+		padding: 20px 0px
+		border-top: 1px solid #fff
+		margin-top: 20px
+		margin: 20px 40px 0
+
+	.wrapper_left
+		margin-bottom: 97px
+
+	.wrapper_left-img, .wrapper_right-img
+		img
+			width: 100px
+
+	.wrapper_title
+		font-size: 20px
+
+	.wrapper_left .wrapper_block
+		padding-right: 130px!important
+
+	.wrapper_right .wrapper_block
+		padding-left: 130px!important
+
+	.wrapper_left::after
+		right: 50%
+		top: unset
+		bottom: -106px
+
+	.section_second .block-free
+		justify-content: center
+		width: 100%
+
+	.wrapper_block
+		position: relative
+
+	.slide
+		width: 100%
+
+	.slide_w
+		min-width: 100%
+		width: 100%
+
+	.slide_quiz
+		padding-right: 50px
+
+	.answer
+		width: 244px
+
+	.question
+		font-size: 24px
+		line-height: 30px
+
+	.banner img
+		max-width: 100%
+
+	.slide_last .banner_title
+		font-size: 24px
+		line-height: 30px
+
+	.slide_last .banner_descr
+		margin-bottom: 25px
+
+	.slide_last .banner_img
+		width: 120px
+		margin: 0 auto
+
+	.banner:not(:last-child)
+		margin-right: 15px
+
+	.slide_last .banner_text
+		top: 15px
+		left: 15px
+		right: 15px
+
+	.slide_last .banner_ico
+		width: 45px
+		height: 45px
+
+	.slide_last .banner
+		height: 100%
+
+	.slide_last
+		height: auto
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.section, .header
+		padding: 60px 0
+
+	.block-content
+		width: 80%
+		top: 116%
+
+	.section_first
+		padding: 60px 0 320px
+
+	.wrapper_left-img
+		transform: none
+		top: 50px
+
+	.wrapper_left .wrapper_block
+		padding-right: 0!important
+		.wrapper_title
+			padding-right: 40px
+		ul
+			padding-right: 130px
+
+	.wrapper_right .wrapper_block
+		padding-left: 0!important
+		.wrapper_title
+			padding-left: 40px
+		ul
+			padding-left: 130px
+
+
+	.quiz 
+		height: auto
+		.slide, .block-form
+			height: 517px
+
+	.block-form_title
+		font-size: 20px
+		line-height: 24px
+		margin-bottom: 20px
+
+	.section_quiz
+		padding: 40px 0 60px
+
+	.form
+		height: 428px
+
+	.input-wrap>div
+		max-width: 100%
+
+	.wrap-checkbox a
+		color: #2cb06c
+
+	.custom-checkbox~label.form_agree br
+		display: none
+
+	.block-first
+		display: none
+
+	.quiz .slide_2
+		height: auto
+
+	.block-second
+		border: none
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 0
+
+	.timeline
+		display: none
+
+	.slide_quiz, .slide_last .slide_quiz
+		padding: 20px
+
+	.question_number
+		font-size: 16px
+		line-height: 19px
+		margin-bottom: 10px
+
+	.question, .slide_last-title
+		font-size: 20px
+		line-height: 24px
+		margin-bottom: 20px
+		text-align: left
+
+	.slide_last-title	
+		margin-bottom: 0
+
+	.answer
+		width: 100%
+		flex-direction: row
+		justify-content: flex-start
+		padding-left: 15px
+		height: auto
+		padding: 20px
+		margin-bottom: 10px!important
+		span
+			text-align: left
+		&:last-child
+			margin-bottom: 20px!important
+
+	.svg-wrap
+		width: 50px
+		height: 50px
+		margin-right: 15px
+
+	.answer-wrap
+		min-height: auto
+
+	.banner_img img
+		display: none
+
+	.slide_last-descr
+		font-weight: 400
+		font-size: 16px
+		line-height: 19px
+		text-align: left
+		margin: 10px 0 20px
+
+	.banners
+		flex-direction: column
+
+	.banner
+		width: 100%
+		max-height: 120px
+		overflow: hidden
+		border-radius: 10px
+		margin-bottom: 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		img
+			max-width: unset
+			width: 100%
+
+	.wrap-checkbox label.error
+		bottom: -10px
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.form
+		min-height: 350px
+		height: auto
+
+	.wrap-checkbox label.error
+		left: 36px
+
+	label.error
+		bottom: -10px
+	
+	.header .container .row
+		width: auto
+
+	.header_right img:first-child
+		max-width: 280px
+
+	.header_right img:last-child
+		width: 159px
+		right: 20px
+		top: 13px
+
+	.header
+		padding: 50px 0
+		&_left
+			margin-top: 20px
+
+	.footer_nav>div
+		width: 48%
+
+	h1
+		font-size: 36px
+		line-height: 42px
+		margin-bottom: 20px
+
+	.header_description
+		font-size: 20px
+		line-height: 24px
+		br
+			display: none
+
+	.block-free
+		margin: 40px 0
+
+	.block-img
+		margin-left: -15px
+		margin-right: -15px
+
+	.section_first .container
+		flex-direction: column
+
+	.block-content
+		position: relative
+		top: unset
+		right: unset
+		transform: none
+		width: 100%
+		margin-top: -90px
+
+	.section_first
+		padding: 60px 0 40px
+
+	.block-content
+		padding: 20px 14px
+
+	.block-content_title
+		font-size: 20px
+		line-height: 24px
+		margin-bottom: 20px
+
+	.block-content li
+		font-size: 16px
+
+	.section_second
+		padding: 40px 0
+
+	h2
+		font-size: 32px
+		line-height: 38px
+		margin-bottom: 20px
+
+	.wrapper>div
+		padding: 20px 0
+
+	.wrapper_left .wrapper_block
+		padding-left: 10px!important
+
+	.wrapper_left .wrapper_block .wrapper_title
+		padding-right: 10px
+
+	.wrapper_left .wrapper_block ul
+		padding-right: 110px
+
+	.wrapper li
+		font-size: 16px
+		line-height: 19px
+
+	.wrapper_mob
+		margin: 20px 10px 0
+
+	.wrapper_left::after
+		right: 50%
+		transform: translateX(50%)
+		bottom: -80px
+
+	.wrapper_right .wrapper_block .wrapper_title
+		padding-left: 10px
+
+	.section_second .block-free
+		margin-top: 40px
+
+	.section_fourth
+		padding: 40px 0 60px
+
+	.column-nav_title
+		font-size: 16px
+		line-height: 22px
+
+	.column-nav a, .column-nav li
+		font-size: 10px
+		line-height: 14px
+
+	.footer_content
+		margin: 20px 0
+
+	.footer_content
+		p
+			font-size: 14px
+			line-height: 22px
+			font-weight: 700
+
+	.footer_bottom
+		flex-direction: column-reverse
+		align-items: center
+
+	.footer_logo
+		margin-top: 20px
+
+	.footer
+		padding: 60px 0 30px
+
+	.custom-checkbox~label.form_agree::before
+		margin-right: 15px
+
+	.custom-checkbox~label.form_agree
+		align-items: flex-start
+
+	.input-wrap>div input
+		height: 32px
+		margin-bottom: 12px
+		font-size: 10px
+		&::placeholder
+			font-size: 10px
+
+	.form button
+		width: 250px
+		height: 42px
+
+	.form
+		padding: 20px
+
+	.answer span
+		font-size: 16px
+		line-height: 20px
+
+	.answer
+		padding: 14px 10px
+
+	.slide_last .banner_text
+		top: 22px
+		left: 22px
+		right: 22px
+
+	.slide_last .banner_title
+		font-size: 19px
+		line-height: 24px
+		margin-bottom: 6px
+
+	.slide_last .banner_descr
+		line-height: 17px
+
+	.slide_last .banner_ico
+		right: 0
+		bottom: 0
+		top: unset
+
+	.payment, .social
+		display: none
+
+	.footer_content
+		.social
+			display: flex
+			justify-content: center
+
+	.header_right
+		max-width: 280px
+		margin: 0 auto
+		position: relative
+
+	.header_right img:last-child
+		right: -2px
+		top: 13px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
